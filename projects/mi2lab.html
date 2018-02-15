@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Project | MI2Lab</title>
+    <link rel="icon" type="image/png" href="../images/favicon.JPG">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.min.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-91453369-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+    <script src="../js/project.js"></script>
+    <div class="portfolio-modal">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <div class="modal-body">
+                            <div>
+                                <a class="back-button " href="../index.html#portfolio">
+                                    <i class="fa fa-1x fa-angle-left"></i> <span>Back to Portfolio</span>
+                                </a>
+                            </div>
+                            <div class="project-title col-xs-12">Michigan Information Interaction Lab</div>
+                            <br/>
+                            <img style="margin-top:50px; margin-bottom: -10px;" src="../images/project-icon/mi2lab.png" class="col-md-6 col-md-offset-3 col-xs-12" />
+
+                            <div class="modal-subsection project-stats col-xs-12">
+                                <ul class="list-inline item-details">
+                                    <li>Date:
+                                        <strong>September 2016 - Present</strong>
+                                    </li>
+                                    <li>Role:
+                                        <strong>UX Designer | Web Developer</strong>
+                                    </li>
+                                    <li>Work Setting:
+                                        <strong>Lab team of 9</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-subsection col-xs-12">
+                                <span class="section-title">Summary</span><hr />
+                                <p>As part of my work in the <a target="_blank" class="link" href="http://mi2lab.com">Michigan Information Interaction Lab</a> I am developing a system that allows
+                                users to control the devices in the lab and interact with them. We called the project Jarvis, given its resemblance to the character from the Iron Man movies.
+                                    My role is to design and program the Jarvis Restful API that our various applications are using to control the lab.
+
+                            </div>
+                            <div class="modal-subsection col-xs-12">
+                                <span class="section-title">Jarvis Integrations</span>
+                                <hr />
+                                <p>
+                                    Our current integrations are with Slack, Trello, Alexa, and the lab device screens. Slack and Trello are used for team collaboration in our lab. Jarvis can pull information from both
+                                    platform and display it through one of our apps. Alexa is used as an input source to feed commands to Jarvis as a voice alternative to our web apps.
+                                </p>
+
+                                <img src="../images/mi2lab/services.png" class="col-md-8 col-md-offset-2 col-xs-12" alt="Low-fidelity prototype">
+
+                            </div>
+
+                            <div class="modal-subsection col-xs-12">
+                                <span class="section-title">Lab Birds-Eye View</span>
+                                <hr />
+                                <p>
+                                    In order to have Jarvis allow users to control the lab device screens, we designed a brids-eye view interface that allows a lab user
+                                    to drag and drop the content shown on one device screen to another.
+                                </p>
+                                <p>We started with a low-fi paper prototype that represented the lab layout with all the permanently residing devices.</p>
+                                <img src="../images/mi2lab/sketch.png" class="col-md-6 col-md-offset-3 col-xs-12 img-border" alt="Low-fidelity prototype">
+
+                            </div>
+                            <div class="modal-subsection col-xs-12">
+                                <span class="section-title">Medium-fi Prototype</span>
+                                <hr />
+                                <p>Next, we developed medium-fi prototypes in sketch that illustrated the actual screen a user would see</p>
+                                <img src="../images/mi2lab/prototype_lofi.png" class="col-md-6 col-md-offset-3 col-xs-12 img-border" alt="Medium-fidelity prototype">
+                            </div>
+                            <div class="modal-subsection col-xs-12">
+                                <span class="section-title">Final Design</span>
+                                <hr />
+                                <p>The final design was finished and the interface were developed. We integrated it into a service we have called XDBrowser, which can control screen content via web sockets.
+                                Through the Jarvis interface, a user can drag content from one screen to another, which tells XDBrowser to reflect the changes in the target device.</p>
+                                <img src="../images/mi2lab/prototype_hifi.png" class="col-md-6 col-md-offset-3 col-xs-12 img-border" alt="High-fidelity prototype">
+                            </div>
+                            <div class="modal-subsection col-xs-12">
+                                <span class="section-title">Check In/Out</span>
+                                <hr />
+                                <p>
+                                    Another feature of Jarvis is to allow lab members to log in and out of the lab. We developed a user interface for this purpose and hooked it up to the Jarvis Restful API.
+                                </p>
+                                <img src="../images/mi2lab/check_in_out.png" class="col-md-6 col-md-offset-3 col-xs-12" alt="High-fidelity prototype">
+
+                            </div>
+                            <div class="modal-subsection col-xs-12">
+                                <span class="section-title">Next Steps</span>
+                                <hr />
+                                <p>
+                                    We are further expanding Jarvis to give it more control over the lab. One area we are
+                                    currently exploring is to enable Jarvis to submit crowd-sourcing requests and manage crowd worker tasks.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-stats col-xs-12">
+                            <a class="back-button " href="../index.html#portfolio">
+                                <i class="fa fa-1x fa-angle-left"></i> <span>Back to Portfolio</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
