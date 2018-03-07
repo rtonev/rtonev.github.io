@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+<!--     <script src="https://unpkg.com/aframe-line-component/dist/aframe-line-component.min.js"></script>
+ --><!--     <script src="vendor/aframe-click-drag-component.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+    <script src="https://rawgit.com/andreasplesch/aframe-meshline-component/master/dist/aframe-meshline-component.min.js"></script> -->
+    <meta charset="utf-8">
+    <meta content="MI2Lab Theta Stream" name="title">
+    <title>MI2Lab Theta Stream</title>
+     <script>
+            registerAframeClickDragComponent(window.AFRAME);
+        </script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-assets>
+        <video id="video" autoplay loop crossorigin></video>
+      </a-assets>
+      <a-videosphere material="side: double" src="#video" radius="80" rotation="0 180 0"></a-videosphere>
+      <a-camera look-controls-enabled="true" mouse-cursor id="camera"></a-camera>     
+    </a-scene>
+    <script src="camera.js"></script>
+  </body>
+</html>
+
+
+
