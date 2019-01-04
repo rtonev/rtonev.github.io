@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Portfolio v3.3.7+1 (http://www.radentonev.com)
- * Copyright 2013-2018 Raden Tonev
+ * Copyright 2013-2019 Raden Tonev
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
@@ -501,6 +501,15 @@ div.modal-body h5 {
   font-weight: 300;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+}
+.section-subtitle-colorless {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
   margin-left: 0;
   margin-right: 0;
 }
