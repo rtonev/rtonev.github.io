@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="524px" height="291px" viewBox="0 0 524 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>user-scenarios</title>
+    <desc>Created with Sketch.</desc>
+    <g id="user-scenarios" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="524" height="291"></rect>
+        <g id="Group" transform="translate(23.000000, 184.000000)">
+            <g id="Group-10-Copy" stroke="#555555">
+                <path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,81 C0.5,84.0375661 2.96243388,86.5 6,86.5 L77,86.5 C80.0375661,86.5 82.5,84.0375661 82.5,81 L82.5,6 C82.5,2.96243388 80.0375661,0.5 77,0.5 L6,0.5 Z" id="Rectangle-3-Copy-3"></path>
+            </g>
+            <text id="IBM-Cloud-Private" font-family="Roboto-Light, Roboto" font-size="14" font-weight="300" fill="#555555">
+                <tspan x="9.81884766" y="44">IBM Cloud </tspan>
+                <tspan x="20.3359375" y="60">Private </tspan>
+            </text>
+        </g>
+        <g id="Group-Copy-4" transform="translate(291.000000, 185.000000)">
+            <g id="Group-10-Copy" stroke="#555555">
+                <path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,81 C0.5,84.0375661 2.96243388,86.5 6,86.5 L77,86.5 C80.0375661,86.5 82.5,84.0375661 82.5,81 L82.5,6 C82.5,2.96243388 80.0375661,0.5 77,0.5 L6,0.5 Z" id="Rectangle-3-Copy-3"></path>
+            </g>
+            <text id="Single-cluster-need" font-family="Roboto-Light, Roboto" font-size="14" font-weight="300" fill="#555555">
+                <tspan x="23.3720703" y="31">Single </tspan>
+                <tspan x="21.215332" y="47">cluster </tspan>
+                <tspan x="27.0327148" y="63">need </tspan>
+            </text>
+        </g>
+        <g id="Group-Copy" transform="translate(145.000000, 184.000000)">
+            <g id="Group-10-Copy" stroke="#555555">
+                <path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,81 C0.5,84.0375661 2.96243388,86.5 6,86.5 L77,86.5 C80.0375661,86.5 82.5,84.0375661 82.5,81 L82.5,6 C82.5,2.96243388 80.0375661,0.5 77,0.5 L6,0.5 Z" id="Rectangle-3-Copy-3"></path>
+            </g>
+            <text id="IBM-Multicloud-Manag" font-family="Roboto-Light, Roboto" font-size="14" font-weight="300" fill="#555555">
+                <tspan x="29.2910156" y="31">IBM </tspan>
+                <tspan x="9.38134766" y="47">Multicloud </tspan>
+                <tspan x="14.2451172" y="63">Manager </tspan>
+            </text>
+        </g>
+        <g id="Group-Copy-5" transform="translate(413.000000, 184.000000)">
+            <g id="Group-10-Copy" stroke="#555555">
+                <path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,81 C0.5,84.0375661 2.96243388,86.5 6,86.5 L77,86.5 C80.0375661,86.5 82.5,84.0375661 82.5,81 L82.5,6 C82.5,2.96243388 80.0375661,0.5 77,0.5 L6,0.5 Z" id="Rectangle-3-Copy-3"></path>
+            </g>
+            <text id="Multiple-cluster-nee" font-family="Roboto-Light, Roboto" font-size="14" font-weight="300" fill="#555555">
+                <tspan x="17.6469727" y="33">Multiple </tspan>
+                <tspan x="21.215332" y="49">cluster </tspan>
+                <tspan x="27.0327148" y="65">need </tspan>
+            </text>
+        </g>
+        <g id="Group-Copy-2" transform="translate(84.000000, 19.000000)">
+            <g id="Group-10-Copy" stroke="#555555">
+                <path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,81 C0.5,84.0375661 2.96243388,86.5 6,86.5 L77,86.5 C80.0375661,86.5 82.5,84.0375661 82.5,81 L82.5,6 C82.5,2.96243388 80.0375661,0.5 77,0.5 L6,0.5 Z" id="Rectangle-3-Copy-3"></path>
+            </g>
+            <text id="Existing-customer" font-family="Roboto-Light, Roboto" font-size="14" font-weight="300" fill="#555555">
+                <tspan x="17.4545898" y="40">Existing </tspan>
+                <tspan x="12.2285156" y="56">customer</tspan>
+            </text>
+        </g>
+        <g id="Group-Copy-3" transform="translate(352.000000, 19.000000)">
+            <g id="Group-10-Copy" stroke="#555555">
+                <path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,81 C0.5,84.0375661 2.96243388,86.5 6,86.5 L77,86.5 C80.0375661,86.5 82.5,84.0375661 82.5,81 L82.5,6 C82.5,2.96243388 80.0375661,0.5 77,0.5 L6,0.5 Z" id="Rectangle-3-Copy-3"></path>
+            </g>
+            <text id="New-customer" font-family="Roboto-Light, Roboto" font-size="14" font-weight="300" fill="#555555">
+                <tspan x="28.1367188" y="40">New </tspan>
+                <tspan x="12.7285156" y="56">customer </tspan>
+            </text>
+        </g>
+        <path id="Line-4-Copy-5" d="M340.541949,165.49665 L383.853227,112.093423 L385.406577,113.353227 L342.095298,166.756453 L346.755348,170.535863 L332.5,177 L335.881899,161.71724 L340.541949,165.49665 Z" fill="#A1A0A1" fill-rule="nonzero"></path>
+        <path id="Line-4-Copy-7" d="M72.5419486,165.49665 L115.853227,112.093423 L117.406577,113.353227 L74.0952984,166.756453 L78.7553477,170.535863 L64.5,177 L67.8818993,161.71724 L72.5419486,165.49665 Z" fill="#A1A0A1" fill-rule="nonzero"></path>
+        <path id="Line-4-Copy-6" d="M443.903931,167.249647 L395.587839,113.423825 L397.076175,112.087839 L445.392266,165.913661 L449.857272,161.905703 L454,177 L439.438925,171.257604 L443.903931,167.249647 Z" fill="#A1A0A1" fill-rule="nonzero"></path>
+        <path id="Line-4-Copy-8" d="M175.903931,167.249647 L127.587839,113.423825 L129.076175,112.087839 L177.392266,165.913661 L181.857272,161.905703 L186,177 L171.438925,171.257604 L175.903931,167.249647 Z" fill="#A1A0A1" fill-rule="nonzero"></path>
+    </g>
+</svg>
