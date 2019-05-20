@@ -3,9 +3,9 @@
  * Copyright 2013-2019 Raden Tonev
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   font-size: 18px;
   font-weight: 300;
@@ -40,7 +40,7 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
@@ -71,7 +71,7 @@ nav {
 .navbar-custom,
 .navbar-custom-project {
   background: white;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .navbar-custom a:focus {
   outline: none;
@@ -91,19 +91,24 @@ nav {
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-nav li a {
+  text-decoration: none;
   color: #ff4c31;
 }
 .navbar-custom .navbar-nav li a:hover {
   color: #ff4c31;
+  text-decoration: none;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus {
   color: #ff4c31;
+  text-decoration: none;
 }
 .navbar-custom .navbar-nav li a:active {
   background: white;
+  text-decoration: none;
 }
 .navbar-custom .navbar-nav li.active a {
+  text-decoration: none;
   color: white;
   background: #ff4c31;
   -webkit-border-radius: 6px;
@@ -496,7 +501,7 @@ div.modal-body h5 {
 }
 .section-title {
   color: #ff4c31;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 300;
   margin-top: 0.67em;
@@ -505,7 +510,7 @@ div.modal-body h5 {
   margin-right: 0;
 }
 .section-subtitle-colorless {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   font-weight: 300;
   margin-top: 2em;
@@ -515,7 +520,7 @@ div.modal-body h5 {
 }
 .section-subtitle {
   color: #ff4c31;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   font-weight: 300;
   margin-top: 0.67em;
@@ -523,16 +528,35 @@ div.modal-body h5 {
   margin-left: 0;
   margin-right: 0;
 }
+.portfolio-item a {
+  text-decoration: none;
+}
+.portfolio-item a:focus,
+.portfolio-item a:active,
+.portfolio-item a.active {
+  text-decoration: none;
+}
 .navbar-project-title a {
   color: #ff4c31;
+  text-decoration: none;
 }
-.navbar-project-title a:hover,
 .navbar-project-title a:focus,
 .navbar-project-title a:active,
 .navbar-project-title a.active {
   text-decoration: none;
   cursor: default;
   color: #ff4c31;
+}
+p a {
+  color: #555555;
+  text-decoration: underline;
+}
+p a:focus,
+p a:active,
+p a:hover,
+p a.active {
+  text-decoration: underline;
+  color: #555555;
 }
 #content {
   position: absolute;
@@ -564,6 +588,7 @@ div.modal-body h5 {
 }
 @media (min-width: 750px) {
   .navbar-project-title a {
+    text-decoration: none;
     margin-left: -158.2px;
     color: #ff4c31;
     padding: 15px 15px;
@@ -572,7 +597,7 @@ div.modal-body h5 {
 }
 .project-title {
   text-align: center;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ff4c31;
   font-size: 2em;
   font-weight: 300;
@@ -626,7 +651,7 @@ a:active {
 .main-title {
   color: #ff4c31;
   font-weight: 300;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   margin-top: 0;
   margin-bottom: 0.67em;
@@ -635,7 +660,7 @@ a:active {
 }
 .navbar-title {
   color: #ff4c31;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 0.67em;

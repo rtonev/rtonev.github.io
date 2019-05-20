@@ -1,7 +1,7 @@
 @import "variables.less";
 @import "mixins.less";
 //@import url(http://fonts.googleapis.com/css?family=Lato:200,300,400,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
 body {
 	font-family: @body-font;
@@ -102,20 +102,25 @@ nav {
 		letter-spacing: 1px;
 		li {
 			a {
+				text-decoration:none;
 				color:  @theme-hover;
 				&:hover {
 					color: @theme-hover;
+					text-decoration:none;
 					outline:none;
 				}
 				&:focus {
 					color:@theme-hover;
+					text-decoration:none;
 				}
 				&:active {
 					background: @theme-primary;
+					text-decoration:none;
 				}
 			}
 			&.active {
 				a {
+					text-decoration:none;
 					color: @theme-primary;
 					background: @theme-hover;
 					-webkit-border-radius:6px;
@@ -489,7 +494,6 @@ div.modal-body {
 	margin-bottom: 0.67em;
 	margin-left: 0;
 	margin-right: 0;
-
 }
 
 .section-subtitle-colorless {
@@ -514,13 +518,17 @@ div.modal-body {
 	margin-right: 0;
 
 }
-
+.portfolio-item a {
+	text-decoration:none;
+	&:focus,
+	&:active,
+	&.active {
+		text-decoration:none;
+	}
+}
 .navbar-project-title a {
 	color:@theme-hover;
-}
-
-.navbar-project-title a{
-	&:hover,
+	text-decoration:none;
 	&:focus,
 	&:active,
 	&.active {
@@ -528,7 +536,18 @@ div.modal-body {
 		cursor: default;
 		color:@theme-hover;
 	}
+}
 
+p a {
+	color: @font-color-body;
+	text-decoration:underline;
+	&:focus,
+	&:active,
+	&:hover,
+	&.active {
+		text-decoration:underline;
+		color: @font-color-body;
+	}
 }
 
 #content {
@@ -567,7 +586,7 @@ div.modal-body {
 @media(min-width:750px) {
 
 	.navbar-project-title a {
-
+		text-decoration:none;
 		margin-left:-158.2px;
 		color:@theme-hover;
 		padding: 15px 15px;
