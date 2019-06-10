@@ -67,30 +67,108 @@
                         </div>
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="section-title">Summary</span><hr />
-                            <p>
-                               My design team was tasked with merging of two of IBM's key strategic projects, IBM Multicloud Manager and IBM Cloud Private, into a single unified solution. Over several months, my task was to design a unified information architecture that would glue the two products together into one cohesive solution. The importance of the project and its many stakeholders made it a challenging task that required me to use research and quick iterations, in order to deliver a solution in time. My work was done under NDA, so certain details have been excluded. 
+                            <p class="col-xs-12">
+                               My design team was tasked with merging of two of IBM's key strategic projects, IBM Multicloud Manager and IBM Cloud Private, into a single unified solution. Over several months, my task was to design an information architecture (IA) that would glue the two products together and provide a great experience for users. The high visibility of the project and its many stakeholders made it a challenging task that required me to loop through multiple feedback sessions and design iterations. The IA that I designed is currently live and being used by our customers. My work was done under a NDA, so certain details have been excluded. 
                             </p>
                         </section>
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="section-title">Problem statement</span><hr />
-                            <p>
-                               IBM Cloud Private (ICP) has been IBM's success cloud story in the recent years, with the project being a key component of IBM's Hybrid Cloud strategy. The platform is based on the emerging Kubernetes cloud management technology. ICP is a single-cloud solution, and as IBM recognized the need for our customers to manage multiple clouds, the company released its multicloud manager solution. So far so good, but IBM Multicloud Manager needs to manage clouds (aka clusters in Kubernetes world) that are of the flavor IBM Cloud Private, among others. The two products fit very well in terms of a functionality, but they were designed by two different teams and were never meant to be used as a single cohesive solution. That is why my team was tasked with redesigning the solution as one unified experience.
+                            <p class="col-xs-12">
+                                IBM Cloud Private (ICP) is IBM's flagship Kubernetes product. However, ICP is a single-cluster solution, and as IBM recognized the customer need to manage multiple clusters, the company released a beta of their new IBM Multicloud Manager (MCM) that could handle this task. Since ICP provided a big chunk of the initial functionality of MCM, the two products had to be merged into one solution. The beta version of MCM included multiple design compromises that made the user experience quite challenging. We were tasked with designing a cohesive unified platform.
                             </p>
                             <br/>
                         </section>
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="section-title">Personas</span><hr />
-                            <p>
-                               There are two primary personas that we focused on during the merge projecte. Todd is a systems administrator, who would use the platform to provision and setup clouds/clusters. Jane, the developer, is responsible for developing and deploying workloads (like applications) to the provisioned clouds. As both personas represent important user groups for our platform, we needed to consider the key scenarios for both personas, and ensure that our platform is designed effectively. 
+                            <p class="col-xs-12">
+                               There are two primary personas that we focused on during the merger. Todd is a systems administrator, who would use the platform to provision and setup clouds/clusters. Jane, the developer, is responsible for developing and deploying workloads (like applications) to the provisioned clouds. As both personas represent important user groups for our platform, we needed to consider the key scenarios for both personas, and ensure that our platform is designed effectively. 
                             </p>
                             <br/>
                             <a href="../images/mcm/personas.svg" class="highslide" onclick="return hs.expand(this)">
                                 <img src="../images/mcm/personas.svg" class="col-xs-12 col-md-10 col-md-offset-1">
                             </a>                         </section>
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
+                            <span class="section-title">Challenges with existing design</span><hr />
+                            <p class="col-xs-12">
+                                 The MCM beta introduced a number of design challenges that we faced. Here are some of the key issues that we were able to discover at first glance:
+                               <ul>
+                                   <li>
+                                    <strong>Main Menu: </strong> the main menu had a bunch of "hidden" launch outs to ICP. It was as if MCM claimed to have certain functionality, but a user clicked on the menu options, it actually launched them out to ICP. There were no visual indicators that aided at helping the user understand that.
+                                   </li>
+                                   <li><strong>Header: </strong> the header of MCM was identical to that of ICP, even though some of the actions available there didn't make sense in the MCM context. It felt as if the header was ported over without much modification.</li>
+                                   <li><strong>Getting Started: </strong> The guides and tutorials were directly taken from ICP, even though much of the information was not applicable to MCM.</li>
+                                   <li>
+                                       <strong>Dashboard: </strong> The dashboard didn't appear to feature useful information that provided value to users.
+                                   </li>
+                               </ul>
+                            </p>
+                            <br/>
+                        </section>
+                        <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
+                            <span class="section-title">Information Architecture</span><hr />
+                            <p class="col-xs-12">
+                               I was tasked with redesigning the information architecture, which was in a pretty bad shape. This included the main menu and header, among other areas. To begin unravelling this problem, we ran an open card sort and a tree tests. The goal of these tests was to gave us a baseline of how the two IAs were performing with target users.
+                            </p>
+                            <br/>
+                            <img src="../images/mcm/card-sort.png" class="col-xs-12 col-md-6">
+                            <img src="../images/mcm/tree-test.png" class="col-xs-12 col-md-6">
+                            <p class="col-xs-12 modal-subsection">
+                               The tests revealed shortcomings of the two individual information architectures and suggested potential ways that menu items could be grouped. After we synthesized and analyzed our research results, we constructed a merge IA solution that was aided by the insights we gathered. Then, we conducted 2 rounds of tree test research with iterations of the undated design. This was need to give us enough confidence in our solution.
+                            </p>
+                            <div class="modal-subsection col-xs-12">
+                                <span class="section-subtitle">Main Menu</span>
+                            </div>
+                            <div class="col-xs-5 col-xs-offset-1">
+                                <h4 class="col-xs-12">Existing ICP design</h4>
+
+                                <a href="../images/mcm/menu-icp.png" class="highslide" onclick="return hs.expand(this)">
+                                    <img src="../images/mcm/menu-icp.png" class="col-xs-12" alt="Stickies with ICP main menu categories">
+                                </a>
+                            </div>
+
+                            <div class="col-xs-5">
+                                <h4 class="col-xs-12">Existing MCM design</h4>
+
+                                <a href="../images/mcm/menu-mcm.png" class="highslide" onclick="return hs.expand(this)">
+                                    <img src="../images/mcm/menu-mcm.png" class="col-xs-12" alt="Stickies with MCM main menu categories">
+                                </a>
+                            </div>
+
+                            <div class="modal-subsection col-xs-10 col-xs-offset-1">
+                                <div>
+                                    <h4 class="col-xs-12">New combined design</h4>
+                                    <a href="../images/mcm/menu-mcm-new.png" class="highslide" onclick="return hs.expand(this)">
+                                    <img src="../images/mcm/menu-mcm-new.png" class="col-xs-12" alt="Stickies with new combined main menu categories">
+                                </a> 
+                                </div>
+                                <!-- <h4>New combined design</h4>
+
+                                <a href="../images/mcm/menu-mcm-new.png" class="highslide" onclick="return hs.expand(this)">
+                                    <img src="../images/mcm/menu-mcm-new.png" class="col-xs-12" alt="Stickies with new combined main menu categories">
+                                </a> -->
+                            </div>
+                            <div class="modal-subsection col-xs-12">
+                                <span class="section-subtitle">Header</span>
+                            </div>
+                            <div class="col-xs-5 col-xs-offset-1">
+                                <h4 class="col-xs-12">Existing shared design</h4>
+
+                                <a href="../images/mcm/header-icp.png" class="highslide" onclick="return hs.expand(this)">
+                                    <img src="../images/mcm/header-icp.png" class="col-xs-12" alt="Stickies with ICP main menu categories">
+                                </a>
+                            </div>
+
+                            <div class="col-xs-5">
+                                <h4 class="col-xs-12">New combined design</h4>
+                                <a href="../images/mcm/header-mcm-new.png" class="highslide" onclick="return hs.expand(this)">
+                                    <img src="../images/mcm/header-mcm-new.png" class="col-xs-12" alt="Stickies with new combined main menu categories">
+                                </a>
+                            </div>
+                        </section>
+                        <!--  <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="section-title">User Scenarios</span><hr />
                             <p>
-                               We had to handle four distinct overarching user scenarios. We had to ensure that all four scenarios were accounted for in the redesigned user experience. Here are the scenarios for which we had to ensure smooth experience:
+                               We had to handle four distinct user starting points for using the proposed unified product. We needed to ensure that all four scenarios were accounted for in the redesigned user experience. Here are the scenarios for which we had to ensure smooth experience:
                                <ol>
                                    <li>Existing IBM Cloud Private customers</li>
                                    <li>Existing IBM Multicloud Manager customers</li>
@@ -100,80 +178,29 @@
                             </p>
                             <br/>
                             <img src="../images/mcm/user-scenarios.svg" class="col-xs-8 col-xs-offset-2" alt="Competitive Analysis">
-                        </section>
-                        <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
-                            <span class="section-title">Information Architecture</span><hr />
-                            <p>
-                               One of the biggest IA challenges was creating a unified main menu. To begin unravelling this problem, we ran open card sorts and and tree tests. These tests gave us a baseline of how the two IAs were performing with users from our target audience. 
-                            </p>
-                            <br/>
-                            <img src="../images/mcm/card-sort.png" class="col-xs-12 col-md-6">
-                            <img src="../images/mcm/tree-test.png" class="col-xs-12 col-md-6">
-                            <p class="col-xs-12 modal-subsection">
-                               The tests revealed shortcomings of the two individual information architectures and suggests potential ways that menu items could be grouped. After we synthesized and analyzed our research results, we constructed a merge IA solution that was aided by the insights we gathered. Then, we conducted 2x rounds of tree test research with the updated architecture, in order to get it in a good place, where we had confidence that it works for our customers. 
-                            </p>
-                            <div class="modal-subsection col-xs-12">
-                                <span class="section-subtitle">Main Menu</span>
-                            </div>
-                            <div class="col-xs-5 col-xs-offset-1">
-                                <h4>IBM Cloud Private</h4>
-
-                                <a href="../images/mcm/menu-icp.png" class="highslide" onclick="return hs.expand(this)">
-                                    <img src="../images/mcm/menu-icp.png" class="col-xs-12" alt="Stickies with ICP main menu categories">
-                                </a>
-                            </div>
-
-                            <div class="col-xs-5">
-                                <h4>IBM Multicloud Manager</h4>
-
-                                <a href="../images/mcm/menu-mcm.png" class="highslide" onclick="return hs.expand(this)">
-                                    <img src="../images/mcm/menu-mcm.png" class="col-xs-12" alt="Stickies with MCM main menu categories">
-                                </a>
-                            </div>
-                            <div class="modal-subsection col-xs-10 col-xs-offset-1">
-                                <h4>New combined design</h4>
-
-                                <a href="../images/mcm/menu-mcm-new.png" class="highslide" onclick="return hs.expand(this)">
-                                    <img src="../images/mcm/menu-mcm-new.png" class="col-xs-12" alt="Stickies with new combined main menu categories">
-                                </a>
-                            </div>
-                            <div class="modal-subsection col-xs-12">
-                                <span class="section-subtitle">Header</span>
-                            </div>
-                            <div class="col-xs-10 col-xs-offset-1">
-                                <h4>IBM Cloud Private + IBM Multicloud Manager shared header</h4>
-
-                                <a href="../images/mcm/header-icp.png" class="highslide" onclick="return hs.expand(this)">
-                                    <img src="../images/mcm/header-icp.png" class="col-xs-12" alt="Stickies with ICP main menu categories">
-                                </a>
-                            </div>
-
-                            <div class="modal-subsection col-xs-10 col-xs-offset-1">
-                                <h4>New combined design</h4>
-
-                                <a href="../images/mcm/header-mcm-new.png" class="highslide" onclick="return hs.expand(this)">
-                                    <img src="../images/mcm/header-mcm-new.png" class="col-xs-12" alt="Stickies with new combined main menu categories">
-                                </a>
-                            </div>
-                        </section>
+                        </section> -->
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="section-title">Stakeholder Alignment</span><hr />
-                            <p>
-                               One of the major challenges of the project was that we had to align a lot of stakeholders that represented the various perspectives from both the IBM Cloud Private and IBM Multicloud Manager teams. Product managers, engineers, designers, and executives all had to agree on what the new information architecture would look like. I had to ensure that everyone was happy, while still managing to keep the discussion focused on the experience for our customers. As the new IA was inevitably going to pose technical challenges, we had to demonstrate great patience and align every key stakeholder to our vision. 
+                            <p class="col-xs-12">
+                               One of the major challenges of the project was that we had to align a lot of stakeholders that represented the various perspectives from both the IBM Cloud Private and IBM Multicloud Manager teams. Product managers, engineers, designers, and executives all had to agree on what the new information architecture would look like. I had to ensure that everyone was happy, while still managing to keep the discussion focused providing a great customer experience. As the new IA was inevitably going to pose technical challenges, we had to demonstrate great patience and align every key stakeholder to our vision. We presented the iterations of our design multiple times and got feedback from our product managers and technical leadership.
                             </p>
                         </section>
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="section-title">Iterations</span><hr />
-                            <p>
-                               The alignment did not come easy, as we had to present to multiple stakeholder teams. We also had to also make a number of tradeoffs, in order to ensure that deadlines are met and the stakeholders are aligned. During this phase of the project, I had to make iterations of the IA (using Mural) and get feedback a number of times. Finally, we were able to arrive at a solution that satisfies the technical, business and usability requirements we had as a collective group.
+                            <p class="col-xs-12 col-md-7">
+                               The alignment did not come easy, as we had to present to multiple stakeholder teams. We also had to make a number of tradeoffs, in order to ensure that deadlines are met and the stakeholders are aligned. During this phase of the project, I had to make 4 major - with multiple small nuances in between - iterations of the IA (using Mural) and get feedback a number of times. Finally, we were able to arrive at a solution that satisfies the core technical, business and experience requirements we had as a collective group.
                             </p>
                             <br/>
-                          <img id="iteration" src="../images/mcm/iteration.svg" class="col-xs-12 col-md-2 col-md-offset-5">
+<!--                           <img id="iteration" src="../images/mcm/iteration.svg" class="col-xs-12 col-md-3 col-md-offset-3">
+ -->                          
+                           <a href="../images/mcm/menu-iterations.gif" class="highslide" onclick="return hs.expand(this)">
+                                <img src="../images/mcm/menu-iterations.gif" class="col-xs-3" alt="Gif of the header menus opening and closing">
+                            </a>
                       
                         </section>  
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="section-title">Mid-fidelity Prototyping</span><hr />
-                            <p>
+                            <p class="col-xs-12">
                                Next, we prototyped the new architecture of the proposed merged product. At this stage we focused mostly on the IA and only did the bare minimum to redesign the details of all the individual screens and pieces. We approach was that we need to align on how the pieces work together first, before we dive deep into all the details for each screen. 
                             </p>
                             <div class="modal-subsection col-xs-10 col-xs-offset-1">
@@ -192,7 +219,7 @@
                         </section>
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="section-title">Lessons learned</span><hr />
-                            <p>
+                            <p class="col-xs-12">
                                I learned many lessons during this project, but the following stand out as key takeaways:
                                <ul>
                                     <li>Aligning stakeholders with conflicting priorities can be a great challenge that requires one to be very patient and empathetic.</li>
@@ -204,7 +231,7 @@
                         </section> 
                                                 <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="section-title">Next steps</span><hr />
-                            <p>
+                            <p class="col-xs-12">
                                Though the unified product is now live in production, its usage over time will be the criteria for how effectively it was designed. The information architecture will continue to evolve and meet the needs of our customers. In many ways, how we observe our users going forward and how we react to their needs is even more important than what we did during our first release.
                             </p>                 
                         </section> 
