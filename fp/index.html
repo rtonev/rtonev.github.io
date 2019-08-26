@@ -9,11 +9,10 @@
         </script>
 
         <meta charset="utf-8" />
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="mobile-web-app-capable" content="yes" /> -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+
         <script src="build/react.development.js"></script>
         <script src="build/react-dom.development.js"></script>
         <script src="build/framer.js"></script>
@@ -57,7 +56,7 @@
         </style>
     </head>
 
-    <body style="margin: 0; padding: 0">
+    <body>
         <main></main>
         <script src="build/standalone.js"></script>
         
@@ -691,6 +690,21 @@ const packages = {}
                     return package
                 }
 
+                packages["@framer/framer.device-skin-google-pixel-2-just-black"] = () => {
+                    var package = {}
+                    var designJson
+                    try {
+                        package = __webpack_require__(/*! framer-package-loader!@framer/framer.device-skin-google-pixel-2-just-black */ "../../../../Applications/Framer X.app/Contents/Resources/Server/lib/framer-package-loader.js!./node_modules/@framer/framer.device-skin-google-pixel-2-just-black/build/index.js")
+                        
+                    } catch (e) {
+                        console.log(e)
+                    }
+                    package.__framer__ = package.__framer__ || {}
+                    package.__framer__.packageJson = {"name":"@framer/framer.device-skin-google-pixel-2-just-black","version":"1.0.0","main":"build/index.js","license":"MIT","devDependencies":{"typescript":"^2.9.2"},"framer":{"components":[{"name":"DeviceSkin","type":"deviceSkin"}]}}
+                    package.__framer__.packageJson.design = designJson
+                    return package
+                }
+
 package.dependencies = packages
 
 exports.__framer__ = package
@@ -705,7 +719,7 @@ exports.__framer__ = package
 /*! exports provided: main, license, devDependencies, peerDependencies, framer, author, dependencies, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"main\":\"dist/index.js\",\"license\":\"MIT\",\"devDependencies\":{\"@framer/framer.device-hand-iphone-1\":\"^1.0.0\",\"@types/react\":\"^16.8\"},\"peerDependencies\":{\"framer\":\"^1.0\",\"react\":\"^16.8\"},\"framer\":{\"id\":\"0e8b5655-9cc5-44fb-a71c-3195c43cd212\"},\"author\":\"Raden Tonev\",\"dependencies\":{\"@framer/google.material-design\":\"^1.0.0\",\"@framer/krijn.video-player\":\"^1.14.0\"}}");
+module.exports = JSON.parse("{\"main\":\"dist/index.js\",\"license\":\"MIT\",\"devDependencies\":{\"@framer/framer.device-hand-iphone-1\":\"^1.0.0\",\"@framer/framer.device-hand-iphone-2\":\"^1.0.0\",\"@framer/framer.device-skin-google-pixel-2-clearly-white\":\"^1.0.0\",\"@framer/framer.device-skin-google-pixel-2-just-black\":\"^1.0.0\",\"@types/react\":\"^16.8\"},\"peerDependencies\":{\"framer\":\"^1.0\",\"react\":\"^16.8\"},\"framer\":{\"id\":\"0e8b5655-9cc5-44fb-a71c-3195c43cd212\"},\"author\":\"Raden Tonev\",\"dependencies\":{\"@framer/google.material-design\":\"^1.0.0\",\"@framer/krijn.video-player\":\"^1.14.0\"}}");
 
 /***/ }),
 
@@ -798,7 +812,32 @@ class DeviceSkin {
         this.image = "device.png";
         this.imageWidth = 1210;
         this.imageHeight = 2513;
-        this.padding = 0;//40;
+        this.padding = 40;
+        this.background = "black";
+    }
+}
+exports.DeviceSkin = DeviceSkin;
+//# sourceMappingURL=index.js.map
+
+
+/***/ }),
+
+/***/ "../../../../Applications/Framer X.app/Contents/Resources/Server/lib/framer-package-loader.js!./node_modules/@framer/framer.device-skin-google-pixel-2-just-black/build/index.js":
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** /Users/tonev/Applications/Framer X.app/Contents/Resources/Server/lib/framer-package-loader.js!./node_modules/@framer/framer.device-skin-google-pixel-2-just-black/build/index.js ***!
+  \****************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+class DeviceSkin {
+    constructor() {
+        this.image = "device.png";
+        this.imageWidth = 1210;
+        this.imageHeight = 2513;
+        this.padding = 40;
         this.background = "black";
     }
 }
@@ -931,7 +970,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../../../Appli
 
 
 // module
-exports.push([module.i, "/*!\n Material Components for the Web\n Copyright (c) 2018 Google Inc.\n License: MIT\n*/\n.mdc-card {\n  background-color: #fff;\n  /* @alternate */\n  background-color: var(--mdc-theme-surface, #fff);\n  border-radius: 2px;\n  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);\n  display: flex;\n  flex-direction: column;\n  box-sizing: border-box; }\n\n.mdc-card--outlined {\n  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);\n  border: 1px solid #e0e0e0; }\n\n.mdc-card__media {\n  position: relative;\n  box-sizing: border-box;\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: cover; }\n  .mdc-card__media::before {\n    display: block;\n    content: \"\"; }\n\n.mdc-card__media:first-child {\n  border-top-left-radius: inherit;\n  border-top-right-radius: inherit; }\n\n.mdc-card__media:last-child {\n  border-bottom-left-radius: inherit;\n  border-bottom-right-radius: inherit; }\n\n.mdc-card__media--square::before {\n  margin-top: 100%; }\n\n.mdc-card__media--16-9::before {\n  margin-top: 56.25%; }\n\n.mdc-card__media-content {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  box-sizing: border-box; }\n\n.mdc-card__primary-action {\n  --mdc-ripple-fg-size: 0;\n  --mdc-ripple-left: 0;\n  --mdc-ripple-top: 0;\n  --mdc-ripple-fg-scale: 1;\n  --mdc-ripple-fg-translate-end: 0;\n  --mdc-ripple-fg-translate-start: 0;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n  will-change: transform, opacity;\n  display: flex;\n  flex-direction: column;\n  box-sizing: border-box;\n  position: relative;\n  outline: none;\n  color: inherit;\n  text-decoration: none;\n  cursor: pointer;\n  overflow: hidden; }\n  .mdc-card__primary-action::before, .mdc-card__primary-action::after {\n    position: absolute;\n    border-radius: 50%;\n    opacity: 0;\n    pointer-events: none;\n    content: \"\"; }\n  .mdc-card__primary-action::before {\n    transition: opacity 15ms linear;\n    z-index: 1; }\n  .mdc-card__primary-action.mdc-ripple-upgraded::before {\n    -webkit-transform: scale(var(--mdc-ripple-fg-scale, 1));\n            transform: scale(var(--mdc-ripple-fg-scale, 1)); }\n  .mdc-card__primary-action.mdc-ripple-upgraded::after {\n    top: 0;\n    /* @noflip */\n    left: 0;\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    -webkit-transform-origin: center center;\n            transform-origin: center center; }\n  .mdc-card__primary-action.mdc-ripple-upgraded--unbounded::after {\n    top: var(--mdc-ripple-top, 0);\n    /* @noflip */\n    left: var(--mdc-ripple-left, 0); }\n  .mdc-card__primary-action.mdc-ripple-upgraded--foreground-activation::after {\n    -webkit-animation: 225ms mdc-ripple-fg-radius-in forwards, 75ms mdc-ripple-fg-opacity-in forwards;\n            animation: 225ms mdc-ripple-fg-radius-in forwards, 75ms mdc-ripple-fg-opacity-in forwards; }\n  .mdc-card__primary-action.mdc-ripple-upgraded--foreground-deactivation::after {\n    -webkit-animation: 150ms mdc-ripple-fg-opacity-out;\n            animation: 150ms mdc-ripple-fg-opacity-out;\n    -webkit-transform: translate(var(--mdc-ripple-fg-translate-end, 0)) scale(var(--mdc-ripple-fg-scale, 1));\n            transform: translate(var(--mdc-ripple-fg-translate-end, 0)) scale(var(--mdc-ripple-fg-scale, 1)); }\n  .mdc-card__primary-action::before, .mdc-card__primary-action::after {\n    top: calc(50% - 100%);\n    /* @noflip */\n    left: calc(50% - 100%);\n    width: 200%;\n    height: 200%; }\n  .mdc-card__primary-action.mdc-ripple-upgraded::after {\n    width: var(--mdc-ripple-fg-size, 100%);\n    height: var(--mdc-ripple-fg-size, 100%); }\n  .mdc-card__primary-action::before, .mdc-card__primary-action::after {\n    background-color: black; }\n  .mdc-card__primary-action:hover::before {\n    opacity: 0.04; }\n  .mdc-card__primary-action:not(.mdc-ripple-upgraded):focus::before, .mdc-card__primary-action.mdc-ripple-upgraded--background-focused::before {\n    transition-duration: 75ms;\n    opacity: 0.12; }\n  .mdc-card__primary-action:not(.mdc-ripple-upgraded)::after {\n    transition: opacity 150ms linear; }\n  .mdc-card__primary-action:not(.mdc-ripple-upgraded):active::after {\n    transition-duration: 75ms;\n    opacity: 0.16; }\n  .mdc-card__primary-action.mdc-ripple-upgraded {\n    --mdc-ripple-fg-opacity: 0.16; }\n\n.mdc-card__primary-action:first-child {\n  border-top-left-radius: inherit;\n  border-top-right-radius: inherit; }\n\n.mdc-card__primary-action:last-child {\n  border-bottom-left-radius: inherit;\n  border-bottom-right-radius: inherit; }\n\n.mdc-card__actions {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  box-sizing: border-box;\n  min-height: 52px;\n  padding: 8px; }\n\n.mdc-card__actions--full-bleed {\n  padding: 0; }\n\n.mdc-card__action-buttons,\n.mdc-card__action-icons {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  box-sizing: border-box; }\n\n.mdc-card__action-icons {\n  color: rgba(0, 0, 0, 0.38);\n  /* @alternate */\n  color: var(--mdc-theme-text-icon-on-background, rgba(0, 0, 0, 0.38));\n  flex-grow: 1;\n  justify-content: flex-end; }\n\n.mdc-card__action-buttons + .mdc-card__action-icons {\n  /* @noflip */\n  margin-left: 0px;\n  /* @noflip */\n  margin-right: 0; }\n  [dir=\"rtl\"] .mdc-card__action-buttons + .mdc-card__action-icons, .mdc-card__action-buttons + .mdc-card__action-icons[dir=\"rtl\"] {\n    /* @noflip */\n    margin-left: 0;\n    /* @noflip */\n    margin-right: 0px; }\n\n.mdc-card__action {\n  display: inline-flex;\n  flex-direction: row;\n  align-items: center;\n  box-sizing: border-box;\n  justify-content: center;\n  cursor: pointer;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none; }\n  .mdc-card__action:focus {\n    outline: none; }\n\n.mdc-card__action--button {\n  /* @noflip */\n  margin-left: 0;\n  /* @noflip */\n  margin-right: 8px;\n  padding: 0 8px; }\n  [dir=\"rtl\"] .mdc-card__action--button, .mdc-card__action--button[dir=\"rtl\"] {\n    /* @noflip */\n    margin-left: 8px;\n    /* @noflip */\n    margin-right: 0; }\n  .mdc-card__action--button:last-child {\n    /* @noflip */\n    margin-left: 0;\n    /* @noflip */\n    margin-right: 0; }\n    [dir=\"rtl\"] .mdc-card__action--button:last-child, .mdc-card__action--button:last-child[dir=\"rtl\"] {\n      /* @noflip */\n      margin-left: 0;\n      /* @noflip */\n      margin-right: 0; }\n\n.mdc-card__actions--full-bleed .mdc-card__action--button {\n  justify-content: space-between;\n  width: 100%;\n  height: auto;\n  max-height: none;\n  margin: 0;\n  padding: 8px 16px;\n  text-align: left; }\n  [dir=\"rtl\"] .mdc-card__actions--full-bleed .mdc-card__action--button, .mdc-card__actions--full-bleed .mdc-card__action--button[dir=\"rtl\"] {\n    text-align: right; }\n\n.mdc-card__action--icon {\n  margin: -6px 0;\n  padding: 12px; }\n\n.mdc-card__action--icon:not(:disabled) {\n  color: rgba(0, 0, 0, 0.38);\n  /* @alternate */\n  color: var(--mdc-theme-text-icon-on-background, rgba(0, 0, 0, 0.38)); }", ""]);
+exports.push([module.i, "/*!\n Material Components for the Web\n Copyright (c) 2018 Google Inc.\n License: MIT\n*/\n.mdc-card {\n  background-color: #fff;\n  /* @alternate */\n  background-color: var(--mdc-theme-surface, #fff);\n  border-radius: 2px;\n  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);\n  display: flex;\n  flex-direction: column;\n  box-sizing: border-box; }\n\n.mdc-card--outlined {\n  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);\n  border: 1px solid #e0e0e0; }\n\n.mdc-card__media {\n  position: relative;\n  box-sizing: border-box;\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: cover; }\n  .mdc-card__media::before {\n    display: block;\n    content: \"\"; }\n\n.mdc-card__media:first-child {\n  border-top-left-radius: inherit;\n  border-top-right-radius: inherit; }\n\n.mdc-card__media:last-child {\n  border-bottom-left-radius: inherit;\n  border-bottom-right-radius: inherit; }\n\n.mdc-card__media--square::before {\n  margin-top: 100%; }\n\n.mdc-card__media--16-9::before {\n  margin-top: 56.25%; }\n\n.mdc-card__media-content {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  box-sizing: border-box; }\n\n.mdc-card__primary-action {\n  --mdc-ripple-fg-size: 0;\n  --mdc-ripple-left: 0;\n  --mdc-ripple-top: 0;\n  --mdc-ripple-fg-scale: 1;\n  --mdc-ripple-fg-translate-end: 0;\n  --mdc-ripple-fg-translate-start: 0;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n  will-change: transform, opacity;\n  display: flex;\n  flex-direction: column;\n  box-sizing: border-box;\n  position: relative;\n  outline: none;\n  color: inherit;\n  text-decoration: none;\n  cursor: pointer;\n  overflow: hidden; }\n  .mdc-card__primary-action::before, .mdc-card__primary-action::after {\n    position: absolute;\n    border-radius: 50%;\n    opacity: 0;\n    pointer-events: none;\n    content: \"\"; }\n  .mdc-card__primary-action::before {\n    transition: opacity 15ms linear;\n    z-index: 1; }\n  .mdc-card__primary-action.mdc-ripple-upgraded::before {\n    -webkit-transform: scale(var(--mdc-ripple-fg-scale, 1));\n            transform: scale(var(--mdc-ripple-fg-scale, 1)); }\n  .mdc-card__primary-action.mdc-ripple-upgraded::after {\n    top: 0;\n    /* @noflip */\n    left: 0;\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    -webkit-transform-origin: center center;\n            transform-origin: center center; }\n  .mdc-card__primary-action.mdc-ripple-upgraded--unbounded::after {\n    top: var(--mdc-ripple-top, 0);\n    /* @noflip */\n    left: var(--mdc-ripple-left, 0); }\n  .mdc-card__primary-action.mdc-ripple-upgraded--foreground-activation::after {\n    -webkit-animation: 225ms mdc-ripple-fg-radius-in forwards, 75ms mdc-ripple-fg-opacity-in forwards;\n            animation: 225ms mdc-ripple-fg-radius-in forwards, 75ms mdc-ripple-fg-opacity-in forwards; }\n  .mdc-card__primary-action.mdc-ripple-upgraded--foreground-deactivation::after {\n    -webkit-animation: 150ms mdc-ripple-fg-opacity-out;\n            animation: 150ms mdc-ripple-fg-opacity-out;\n    -webkit-transform: translate(var(--mdc-ripple-fg-translate-end, 0)) scale(var(--mdc-ripple-fg-scale, 1));\n            transform: translate(var(--mdc-ripple-fg-translate-end, 0)) scale(var(--mdc-ripple-fg-scale, 1)); }\n  .mdc-card__primary-action::before, .mdc-card__primary-action::after {\n    top: calc(50% - 100%);\n    /* @noflip */\n    left: calc(50% - 100%);\n    width: 200%;\n    height: 200%; }\n  .mdc-card__primary-action.mdc-ripple-upgraded::after {\n    width: var(--mdc-ripple-fg-size, 100%);\n    height: var(--mdc-ripple-fg-size, 100%); }\n  .mdc-card__primary-action::before, .mdc-card__primary-action::after {\n    background-color: black; }\n  .mdc-card__primary-action:hover::before {\n    opacity: 0.04; }\n  .mdc-card__primary-action:not(.mdc-ripple-upgraded):focus::before, .mdc-card__primary-action.mdc-ripple-upgraded--background-focused::before {\n    transition-duration: 75ms;\n    opacity: 0.12; }\n  .mdc-card__primary-action:not(.mdc-ripple-upgraded)::after {\n    transition: opacity 150ms linear; }\n  .mdc-card__primary-action:not(.mdc-ripple-upgraded):active::after {\n    transition-duration: 75ms;\n    opacity: 0.16; }\n  .mdc-card__primary-action.mdc-ripple-upgraded {\n    --mdc-ripple-fg-opacity: 0.16; }\n\n.mdc-card__primary-action:first-child {\n  border-top-left-radius: inherit;\n  border-top-right-radius: inherit; }\n\n.mdc-card__primary-action:last-child {\n  border-bottom-left-radius: inherit;\n  border-bottom-right-radius: inherit; }\n\n.mdc-card__actions {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  box-sizing: border-box;\n  min-height: 52px;\n  padding: 8px; }\n\n.mdc-card__actions--full-bleed {\n  padding: 0; }\n\n.mdc-card__action-buttons,\n.mdc-card__action-icons {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  box-sizing: border-box; }\n\n.mdc-card__action-icons {\n  color: rgba(0, 0, 0, 0.38);\n  /* @alternate */\n  color: var(--mdc-theme-text-icon-on-background, rgba(0, 0, 0, 0.38));\n  flex-grow: 1;\n  justify-content: flex-end; }\n\n.mdc-card__action-buttons + .mdc-card__action-icons {\n  /* @noflip */\n  margin-left: 16px;\n  /* @noflip */\n  margin-right: 0; }\n  [dir=\"rtl\"] .mdc-card__action-buttons + .mdc-card__action-icons, .mdc-card__action-buttons + .mdc-card__action-icons[dir=\"rtl\"] {\n    /* @noflip */\n    margin-left: 0;\n    /* @noflip */\n    margin-right: 16px; }\n\n.mdc-card__action {\n  display: inline-flex;\n  flex-direction: row;\n  align-items: center;\n  box-sizing: border-box;\n  justify-content: center;\n  cursor: pointer;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none; }\n  .mdc-card__action:focus {\n    outline: none; }\n\n.mdc-card__action--button {\n  /* @noflip */\n  margin-left: 0;\n  /* @noflip */\n  margin-right: 8px;\n  padding: 0 8px; }\n  [dir=\"rtl\"] .mdc-card__action--button, .mdc-card__action--button[dir=\"rtl\"] {\n    /* @noflip */\n    margin-left: 8px;\n    /* @noflip */\n    margin-right: 0; }\n  .mdc-card__action--button:last-child {\n    /* @noflip */\n    margin-left: 0;\n    /* @noflip */\n    margin-right: 0; }\n    [dir=\"rtl\"] .mdc-card__action--button:last-child, .mdc-card__action--button:last-child[dir=\"rtl\"] {\n      /* @noflip */\n      margin-left: 0;\n      /* @noflip */\n      margin-right: 0; }\n\n.mdc-card__actions--full-bleed .mdc-card__action--button {\n  justify-content: space-between;\n  width: 100%;\n  height: auto;\n  max-height: none;\n  margin: 0;\n  padding: 8px 16px;\n  text-align: left; }\n  [dir=\"rtl\"] .mdc-card__actions--full-bleed .mdc-card__action--button, .mdc-card__actions--full-bleed .mdc-card__action--button[dir=\"rtl\"] {\n    text-align: right; }\n\n.mdc-card__action--icon {\n  margin: -6px 0;\n  padding: 12px; }\n\n.mdc-card__action--icon:not(:disabled) {\n  color: rgba(0, 0, 0, 0.38);\n  /* @alternate */\n  color: var(--mdc-theme-text-icon-on-background, rgba(0, 0, 0, 0.38)); }", ""]);
 
 // exports
 
@@ -13801,7 +13840,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
       "_constraints": {
         "enabled": true
       },
-      "width": 412,
+      "width": 411.1153406928055,
       "height": 730.8717167872098,
       "left": 0,
       "top": 0,
@@ -13835,10 +13874,10 @@ var styled = _styled(StyledComponent, constructWithOptions);
           "_constraints": {
             "enabled": true
           },
-          "height": 207,
+          "height": 196,
           "left": 0,
           "right": 0,
-          "top": 47,
+          "top": 0,
           "componentIdentifier": "@framer/krijn.video-player/./Video.tsx_VideoPlayer",
           "visible": true,
           "style": {
@@ -13850,8 +13889,8 @@ var styled = _styled(StyledComponent, constructWithOptions);
           {
             "componentClass": "@framer/krijn.video-player/./Video.tsx_VideoPlayer",
             "props": {
-              "width": 412,
-              "height": 207,
+              "width": 411,
+              "height": 196,
               "srcType": "Video",
               "url": "https://www.youtube.com/watch?v=FfobapB8bTA",
               "video": "design/assets/y2mate.com - rener_gracie_vs_4_korean_black_belts_b8-usXVkF_U_1080p.mp4",
@@ -13881,8 +13920,9 @@ var styled = _styled(StyledComponent, constructWithOptions);
           },
           "width": 96,
           "height": 36,
-          "left": 94,
-          "bottom": 257,
+          "left": "50.121654501216554%",
+          "bottom": 261,
+          "center": "x",
           "componentIdentifier": "@framer/google.material-design/./Button.tsx_Button",
           "visible": true,
           "style": {
@@ -13919,45 +13959,10 @@ var styled = _styled(StyledComponent, constructWithOptions);
           "_constraints": {
             "enabled": true
           },
-          "height": 46,
+          "height": 33,
           "left": 0,
           "right": 0,
           "bottom": 0,
-          "_border": {},
-          "visible": true,
-          "style": {
-            "rotate": 0,
-            "overflow": "visible",
-            "backgroundColor": "rgba(0, 153, 255, 0.5)"
-          },
-          "background": {
-            "r": 0,
-            "g": 153,
-            "b": 255,
-            "a": 0.5,
-            "h": 204,
-            "s": 1,
-            "l": 0.5,
-            "initialValue": "rgba(0, 153, 255, 0.5)",
-            "roundA": 0.5,
-            "format": "rgb"
-          }
-        },
-        "children": []
-      },
-      {
-        "componentClass": "Frame",
-        "props": {
-          "key": "PwcuH6aKq",
-          "id": "id_PwcuH6aKq",
-          "willChangeTransform": false,
-          "_constraints": {
-            "enabled": true
-          },
-          "width": 20,
-          "height": 431,
-          "left": 0,
-          "bottom": 46,
           "_border": {},
           "visible": true,
           "style": {
@@ -14014,21 +14019,48 @@ var styled = _styled(StyledComponent, constructWithOptions);
           }
         },
         "children": []
+      },
+      {
+        "componentClass": "Frame",
+        "props": {
+          "key": "PwcuH6aKq",
+          "id": "id_PwcuH6aKq",
+          "willChangeTransform": false,
+          "_constraints": {
+            "enabled": true
+          },
+          "width": 20,
+          "height": 431,
+          "left": 0,
+          "bottom": 46,
+          "_border": {},
+          "visible": true,
+          "style": {
+            "rotate": 0,
+            "overflow": "visible",
+            "backgroundColor": "rgba(0, 153, 255, 0.5)"
+          },
+          "background": {
+            "r": 0,
+            "g": 153,
+            "b": 255,
+            "a": 0.5,
+            "h": 204,
+            "s": 1,
+            "l": 0.5,
+            "initialValue": "rgba(0, 153, 255, 0.5)",
+            "roundA": 0.5,
+            "format": "rgb"
+          }
+        },
+        "children": []
       }
-    ],
-    "navigationLink": {
-      "navigationTarget": "Iq0HvHB0K",
-      "navigationTransition": "push",
-      "navigationTransitionDirection": "left",
-      "navigationTransitionOverrides": {
-        "backdropColor": "rgba(4,4,15,.4)"
-      }
-    }
+    ]
   },
   "metadata": {
-    "name": "Frame",
+    "name": "Google Pixel 2",
     "id": "wpjoTC3j3",
-    "width": 412,
+    "width": 411,
     "height": 731,
     "selectionLock": false,
     "settings": {
@@ -14069,7 +14101,6 @@ var styled = _styled(StyledComponent, constructWithOptions);
         "selector": "Google Pixel 2"
       },
       "skin": "",
-      "hand": null,
       "zoom": -1,
       "rotate": false,
       "bezel": false,
@@ -14078,108 +14109,7 @@ var styled = _styled(StyledComponent, constructWithOptions);
       "__class": "PreviewSettings"
     }
   },
-  "navigation": {
-    "Iq0HvHB0K": {
-      "componentClass": "Frame",
-      "props": {
-        "key": "Iq0HvHB0K",
-        "id": "id_Iq0HvHB0K",
-        "willChangeTransform": false,
-        "_constraints": {
-          "enabled": true
-        },
-        "width": 411.1153406928055,
-        "height": 730.8717167872098,
-        "left": 0,
-        "top": 0,
-        "_border": {},
-        "visible": true,
-        "style": {
-          "rotate": 0,
-          "overflow": "hidden",
-          "backgroundColor": "rgba(255,255,255,1)"
-        },
-        "background": {
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "a": 1,
-          "h": 0,
-          "s": 0,
-          "l": 1,
-          "initialValue": "rgba(255,255,255,1)",
-          "roundA": 1,
-          "format": "rgb"
-        }
-      },
-      "children": [
-        {
-          "componentClass": "ComponentContainer",
-          "props": {
-            "key": "p8om7Or_t",
-            "id": "id_p8om7Or_t",
-            "willChangeTransform": false,
-            "_constraints": {
-              "enabled": true
-            },
-            "width": 200,
-            "height": 48,
-            "left": 23,
-            "top": 301,
-            "componentIdentifier": "@framer/google.material-design/./Inputs_Select.tsx_Inputs_Select",
-            "visible": true,
-            "style": {
-              "rotate": "0deg",
-              "opacity": 1
-            }
-          },
-          "children": [
-            {
-              "componentClass": "@framer/google.material-design/./Inputs_Select.tsx_Inputs_Select",
-              "props": {
-                "width": 200,
-                "height": 48,
-                "text": "Hello World!",
-                "placeholders": null,
-                "id": "p8om7Or_t@framer/google.material-design/./Inputs_Select.tsx_Inputs_Select",
-                "key": "p8om7Or_t@framer/google.material-design/./Inputs_Select.tsx_Inputs_Select"
-              },
-              "children": []
-            }
-          ]
-        },
-        {
-          "componentClass": "Text",
-          "props": {
-            "key": "m64Ii4eJ2",
-            "id": "id_m64Ii4eJ2",
-            "willChangeTransform": false,
-            "_constraints": {
-              "enabled": true,
-              "autoSize": true
-            },
-            "width": 86,
-            "height": 19,
-            "left": 146,
-            "top": 220,
-            "rawHTML": "<div data-offset-key=\"8abf1-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"8abf1-0-0\" style=\"tab-size:4;font-family:&quot;.SFNSText&quot;, &quot;SFProText-Regular&quot;, &quot;SFUIText-Regular&quot;, &quot;.SFUIText&quot;, sans-serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Hello world</span></span></div>",
-            "fonts": [
-              "__SF-UI-Text-Regular__"
-            ],
-            "opacity": 1,
-            "rotation": 0,
-            "visible": true,
-            "autoSize": true,
-            "calculatedSize": {
-              "width": 86,
-              "height": 19
-            },
-            "isEditable": false
-          }
-        }
-      ]
-    }
-  },
+  "navigation": {},
   "customProperties": {}
 };
         const $build_index_js = document.querySelector("#build_index_js")

@@ -62,6 +62,12 @@ node_modules/@framer/google.material-design/code/Card.tsx
 node_modules/@framer/google.material-design/code/Button.tsx
 node_modules/@framer/google.material-design/build/index.js
 node_modules/@framer/google.material-design/README.md
+node_modules/@framer/framer.device-skin-google-pixel-2-just-black/yarn.lock
+node_modules/@framer/framer.device-skin-google-pixel-2-just-black/package.json
+node_modules/@framer/framer.device-skin-google-pixel-2-just-black/index.ts
+node_modules/@framer/framer.device-skin-google-pixel-2-just-black/device.png
+node_modules/@framer/framer.device-skin-google-pixel-2-just-black/build/index.js.map
+node_modules/@framer/framer.device-skin-google-pixel-2-just-black/build/index.js
 node_modules/@framer/framer.device-skin-google-pixel-2-clearly-white/yarn.lock
 node_modules/@framer/framer.device-skin-google-pixel-2-clearly-white/package.json
 node_modules/@framer/framer.device-skin-google-pixel-2-clearly-white/index.ts
