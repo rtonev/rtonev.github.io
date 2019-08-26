@@ -87,6 +87,7 @@ node_modules/@framer/framer.device-hand-iphone-1/hand.png
 node_modules/@framer/framer.device-hand-iphone-1/build/index.js.map
 node_modules/@framer/framer.device-hand-iphone-1/build/index.js
 design/assets/y2mate.com - rener_gracie_vs_4_korean_black_belts_b8-usXVkF_U_1080p.mp4
+design/assets/testGif.mp4
 build/vendors.js
 build/framer.js
 index.html
