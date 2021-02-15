@@ -9,7 +9,7 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",
     "gulp-header": "^1.8.8",
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "aos": "^2.2.0",
-    "express": "^3.21.2",
+    "express": "~4.17.1",
     "scrollreveal": "^3.3.6"
   },
   "bundleDependencies": [],
