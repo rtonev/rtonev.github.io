@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Portfolio v3.3.7+1 (http://www.radentonev.com)
- * Copyright 2013-2020 Raden Tonev
+ * Copyright 2013-2021 Raden Tonev
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
@@ -242,7 +242,7 @@ section.success {
   margin-top: -12px;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content p {
   font-size: 18px;
@@ -444,7 +444,7 @@ fieldset[disabled] .btn-success.active {
   font-size: 3em;
 }
 .portfolio-modal .modal-content h3 {
-  font-size: 28px;
+  font-size: 22px;
 }
 .portfolio-modal .modal-content h3,
 .portfolio-modal .modal-content h4,
