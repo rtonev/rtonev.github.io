@@ -28,7 +28,7 @@ gulp.task('less', function() {
 });
 
 // Minify compiled CSS
-gulp.task('minify-css', ['less'], function() {
+gulp.task('minify-css', gulp.series(['less'], function() {
     return gulp.src('css/main.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
@@ -36,7 +36,8 @@ gulp.task('minify-css', ['less'], function() {
         .pipe(browserSync.reload({
             stream: true
         }))
-});
+}));
+
 
 // Minify JS
 // gulp.task('minify-js', function() {
@@ -51,7 +52,7 @@ gulp.task('minify-css', ['less'], function() {
 // });
 
 // Copy vendor libraries from /node_modules into /vendor
-gulp.task('copy', function() {
+gulp.task('copy', function(done) {
     gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
         .pipe(gulp.dest('vendor/bootstrap'));
 
@@ -70,10 +71,16 @@ gulp.task('copy', function() {
             '!node_modules/font-awesome/*.json'
         ])
         .pipe(gulp.dest('vendor/font-awesome'))
+        done();
 });
 
 // Run everything
-gulp.task('default', ['less', 'minify-css', /*'minify-js',*/ 'copy']);
+// gulp.task('default', ['less', 'minify-css', /*'minify-js',*/ 'copy']);
+
+gulp.task('default', gulp.series(['less', 'minify-css', /*'minify-js',*/ 'copy'], function(done) { 
+    // default task code here
+    done();
+}));
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -85,11 +92,11 @@ gulp.task('browserSync', function() {
 });
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', gulp.series(['browserSync', 'less', 'minify-css', /*'minify-js'*/], function() {
     gulp.watch('less/*.less', ['less']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);
-});
+}));

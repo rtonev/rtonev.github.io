@@ -10,12 +10,13 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.13",
-    "gulp-header": "^1.8.8",
-    "gulp-less": "^3.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^2.0.0"
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-header": "^2.0.9",
+    "gulp-less": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^1.12.4"
   },
   "engines": {
     "node": ">= 0.6.0",
