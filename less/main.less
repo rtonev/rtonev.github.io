@@ -25,7 +25,10 @@ a.active {
 .img-centered {
 	margin: 0 auto;
 }
-
+.backToPortfolio {
+	fint-size: 24px;
+	display:none;
+}
 header {
 	text-align: center;
 	background: @theme-success;
@@ -59,6 +62,11 @@ header {
 
 }
 @media(min-width:768px) {
+	.backToPortfolio {
+		display:inline;
+		fint-size: 24px;
+	}
+
 	header {
 		.container {
 			padding-top: 200px;
@@ -155,7 +163,7 @@ nav {
 
 }
 
-@media(min-width:768px) {
+/*@media(min-width:768px) {*/
     .navbar-custom {
         padding: 20px 0;
         -webkit-transition: padding 0.3s;
@@ -173,8 +181,13 @@ nav {
 		.navbar-brand {
 	        font-size: 1.5em;
 	    }
+	    .back-button {
+	    	/*transition: top 0.3s;*/
+	    	font-size:14px;
+	    	top:10px;
+	    }
 	}
-}
+/*}*/
 
 section#about {
 	padding-top:100px;
@@ -189,14 +202,14 @@ section.success {
 	color: @theme-primary;
 }
 
-@media(max-width:767px) {
+/*@media(max-width:767px) {
 	section {
-		padding: 75px 0;
+		padding: 50px 0;
 	}
 	section.first {
-		padding-top: 75px;
+		padding-top: 50px;
 	}
-}
+}*/
 .portfolio-card {
 	border: solid 1px @theme-dark-medium;
 	border-radius: 6px;
@@ -622,6 +635,7 @@ a:active {
 	position: absolute;
 	font-size:18px;
 	padding-top:0px;
+	top:12px;
 	left: 0;
 	cursor: pointer;
 	color:@theme-hover;
