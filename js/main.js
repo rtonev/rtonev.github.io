@@ -14,10 +14,10 @@
         event.preventDefault();
     });
 
-    // $('body').scrollspy({
-    //     target: '.navbar-fixed-top',
-    //     offset: 51
-    // });
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 51
+    });
 
     $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
         $('.navbar-toggle:visible').click();
