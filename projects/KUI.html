@@ -67,27 +67,28 @@
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">Summary</span><hr />
                             <p class="col-xs-12">
-                                   ...
+                                During my work at IBM, I was tasked with working on an open-source tool called KUI. The product is a command line interface (CLI) that also has graphic user interface (GUI) features. I redesigned the tool's user experience, in order to make it more valuable to people. I also designed a way in which KUI would be integrated into IBM's flagship cloud management tool, IBM Multicloud Manager. 
                             </p>
                         </section>
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">Problem statement</span><hr />
                             <p class="col-xs-12">
-                                ....
+                                KUI is an open-source tool developed in IBM Research that meant to modernize the Terminal/CLI experience by adding GUI-like features, like charts, tables and and richer interactions. Though the tool had a lot of potential, it was lacking cohesive design and its supported features were not built in a human-centered way. I was tasked with improving the functionality and usability of the product, while keeping its core DNA of being a CLI that includes elements of modern graphic interfaces.
                             </p>
                         </section>
-                        <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
-                            <span class="col-xs-12 section-title">Personas</span><hr />
+                   <!--      <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
+                            <span class="col-xs-12 section-title">Kubernetes</span><hr />
                             <p class="col-xs-12">
-                               .....The key personas that we focused on for notebooks were database administrators and data engineers. These were some of the main target groups of people for Azure Data Studio, and so it was important that our notebooks met their needs effectively. .....
+                                <a href="https://kubernetes.io" target="_blank">Kubernetes</a> is a system for managing scalable cloud-native systems. It relies on a set of commands for a terminal CLI. In order to make Kubernetes easier to learn and use, companies have been developing applications that feature full-fledged GUIs, which removes the need for people to learn and use commands. IBM's flagship application of this kind is called IBM Multi-Cloud Manager (MCM).
                             </p>
-                            <br/>                       
-        
-                           <a href="../images/kui/personas.png" class="highslide" onclick="return hs.expand(this)">
-                                <img src="../images/kui/personas.png" class="col-xs-11 col-xs-offset-1" alt="Gif of the header menus opening and closing">
-                            </a>
-                        </section>
+                            <p class="col-xs-12">
+                                KUI was developed in IBM Research with the idea of making Kubernetes commands more powerful and easier to use by introducing modern graphic interface elements into a traditional CLI. This approach had the promise of keeping the strengths of a traidtional CLI, while also mitigating its weakness of not having rich interactions and visuals.
+                            </p>
+                            <img src="../images/kui/kubernetes.png" class="col-xs-8 col-xs-offset-2" alt="Gif of the header menus opening and closing">
 
+                        </section> -->
+                        
+<!-- 
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">Multi-Cloud Manager (MCM)</span><hr />
                             <p class="col-xs-12">
@@ -97,33 +98,52 @@
                            <a href="../images/kui/mcm.png" class="highslide" onclick="return hs.expand(this)">
                                 <img src="../images/kui/mcm.png" class="col-xs-12" alt="Gif of the header menus opening and closing">
                             </a>
-                        </section>                        
+                        </section>       -->                  
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">Existing KUI</span><hr />
                             <p class="col-xs-12">
-                               ...
+                               The existing open source <a href="https://github.com/kubernetes-sigs/kui" target="_blank">KUI</a> had the key functionality to visualize rich text using a terminal. However, it only had basic features that demonstrated the concept. My goal was to apply design thinking, in order to make the tool more useful and easier to use for its target personas.
                             </p>
                             <br/>                    
                            <a href="../images/kui/kui-open-source.png" class="highslide" onclick="return hs.expand(this)">
-                                <img src="../images/kui/kui-open-source.png" class="col-xs-12" alt="Gif of the header menus opening and closing">
+                                <img src="../images/kui/kui-open-source.png" class="col-xs-10 col-md-offset-1" alt="Gif of the header menus opening and closing">
+                            </a>
+                        </section>
+                        <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
+                            <span class="col-xs-12 section-title">Personas</span><hr />
+                            <p class="col-xs-12">
+                               The target personas for KUI are system administrators and application developers. Both personas use KUI to do their job, but they would use it in different ways. Application developers tend to work with one to a few applications, but need very detailed control, while system administrators typically worry about the health of many systems and apps.
+                            </p>
+                            <br/>                       
+        
+                           <a href="../images/kui/personas.png" class="highslide" onclick="return hs.expand(this)">
+                                <img src="../images/kui/personas.png" class="col-xs-11 col-xs-offset-1" alt="Gif of the header menus opening and closing">
                             </a>
                         </section>                        
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">As-is user journey</span><hr />
                             <p class="col-xs-12">
-                               Section description...
+                               Since I was tasked with integrating KUI into IBM Multicloud Manager (MCM), I mapped out the current journey that users had, while trying to do their work. This highlighed the many times people have to switch between a terminal and the MCM web applicaion. This made an impression on me, as I thought this could be a potential area for improvement.
                             </p>
                                  <div class="col-xs-12">  
                                     <a href="../images/kui/as-is.png" class="highslide" onclick="return hs.expand(this)">
                                         <img src="../images/kui/as-is.png" class="col-xs-12" alt="Code cell before redesign">
                                     </a>    
                                 </div>              
-                          
                         </section> 
+                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
+                            <span class="col-xs-12 section-title">Hills</span><hr />
+                            <p class="col-xs-12">
+                               After assessing the current journey, I worked with the team (offering managers and developers) to define <a href="https://www.ibm.com/design/thinking/page/toolkit/activity/writing-hills" target="_blank">Hills</a>, which are goals defined in a human-centered way. Hills help us align around our objectives and ensure that the team is in sync.
+                            </p>
+                                 <div class="col-xs-12">  
+                                 <img src="../images/kui/hills.png" class="col-xs-12" alt="Code cell before redesign">  
+                            </div>              
+                        </section>  
                          <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">To-be user journey</span><hr />
                             <p class="col-xs-12">
-                               Section description...
+                                As I continued my work, I came up with a to-be user journey that showcased my target objective. A key property of my design was to reduce the friction that comes with switching back and forth between tools.
                             </p>
                                  <div class="col-xs-12">  
                                 <a href="../images/kui/to-be.png" class="highslide" onclick="return hs.expand(this)">
@@ -135,7 +155,7 @@
                           <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">Team alignment</span><hr />
                             <p class="col-xs-12">
-                               Section description...
+                                Before working on a prototype, I had to align with my development and offering (product) management partners. I wanted to get their buy in early, as that would ensure that I am not spending too much time on an idea that is not well received. 
                             </p>
                                  <div class="col-xs-12">  
                                 <a href="../images/kui/venn%20diagram.png" class="highslide" onclick="return hs.expand(this)">
@@ -144,21 +164,11 @@
                             </div>              
                           
                         </section> 
-                        <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
-                            <span class="col-xs-12 section-title">Hills</span><hr />
-                            <p class="col-xs-12">
-                               Section description...
-                            </p>
-                                 <div class="col-xs-12">  
-                                <a href="../images/kui/hills.png" class="highslide" onclick="return hs.expand(this)">
-                                    <img src="../images/kui/hills.png" class="col-xs-12" alt="Code cell before redesign">
-                                </a>    
-                            </div>              
-                        </section>  
+                       
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">UX audit</span><hr />
                             <p class="col-xs-12">
-                               Section description...
+                                To get a good understanding of how KUI works in detail, I conducted a UX audit. I analyzed the functionality, interaction model, and visual language. My findings indicated that the tool can quite powerful in combining a terminal and a graphic user interface effectively, but it lacked cohesion and a consistent design language. 
                             </p>
                                  <div class="col-xs-12">  
                                 <a href="../images/notebooks/ux-audit.png" class="highslide" onclick="return hs.expand(this)">
@@ -169,7 +179,7 @@
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">Competitive analysis</span><hr />
                             <p class="col-xs-12">
-                               Section description...
+                               I also looked around the web for other tools that try to combine CLI and graphic interfaces. I conducted a competitive analysis and explored whether there are ideas that I could find ideas that to draw inspiration from.
                             </p>
                                  <div class="col-xs-12">  
                                 <a href="../images/kui/competitive-analysis.png" class="highslide" onclick="return hs.expand(this)">
@@ -180,7 +190,7 @@
                        <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">Sketching</span><hr />
                             <p class="col-xs-12">
-                               Section description...
+                               Next, I sketched out concepts that I could use for my design. As I was brainstorming ideas, I kept an eye on the user journey that I had created. The sketches aimed to realize that journey, through an intuitive and clean design.
                             </p>
                                  <div class="col-xs-12">  
                                 <a href="../images/kui/sketches.png" class="highslide" onclick="return hs.expand(this)">
@@ -191,7 +201,7 @@
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">Mid-fidelity prototyping</span><hr />
                             <p class="col-xs-12">
-                               Section description... 
+                               As I moved to higher fidelity in Sketch, I prototyped the key use cases, applied the IBM Carbon design language, and envisioned what integrating KUI inside of IBM Multicloud Manager (MCM) would look like. I build on top of the promise of KUI, but I ended up redesigning much of the interactions and visuals that it offered, in order to make it more consistent and easier to use. 
                             </p>
                             <br/>                       
 <!--                             <h3 class="col-xs-12 section-subtitle">Text cell</h3>
@@ -218,7 +228,7 @@
 <!--                             <h3 class="col-xs-12 section-subtitle">Code cell</h3>
 -->                         <div class="col-xs-12">
                                 <p class="col-xs-12">
-                                    <h4 class="col-xs-12">Saved</h4>
+                                    <h4 class="col-xs-12">Saved commands</h4>
                                     <p class="col-xs-12">
                                      <a href="../images/kui/mid-fi-3.jpg" class="highslide" onclick="return hs.expand(this)">
                                         <img src="../images/kui/mid-fi-3.jpg" class="col-xs-12" alt="Code cell before redesign">
@@ -230,6 +240,9 @@
 
                          <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">User testing</span><hr />
+                            <p class="col-xs-12">
+                                After I finished the mid-fidelity prototype, I partnered with a UX researcher to conduct study, in order to test its usability. Below are some of the high-level insights that we gathered:
+                            </p>
                                 <ul>
                                     <li>Search is great, but options are too many</li>
                                     <li>Saved commands should be more powerful</li>
@@ -237,9 +250,7 @@
                                     <li>Users want events and logs</li>
                                 </ul>
                                  <div class="col-xs-12">  
-                                    <a href="../images/kui/user%20testing.png" class="highslide" onclick="return hs.expand(this)">
-                                        <img src="../images/kui/user%20testing.png" class="col-xs-12" alt="Code cell before redesign">
-                                    </a>    
+                                    <img src="../images/kui/user-testing.png" class="col-xs-12" alt="Code cell before redesign">
                                 </div>              
                         </section> 
                        <!--  <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
@@ -256,11 +267,11 @@
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">High-fidelity prototype</span><hr />
                             <p class="col-xs-12">
-                               Section description...
+                                After collecting the insights from the study, I made some updates and collaborated with a visual designer to create a high-fidelity prototype. We tweaked the spacing, added colors and made sure that we are aligned to our guidelines around UI components and illustrations.
                             </p>
                             <div class="col-xs-12">
                                 <p class="col-xs-12">
-                                    <h4 class="col-xs-12">blah blah</h4>
+                                    <h4 class="col-xs-12">Initial state</h4>
                                     <p class="col-xs-12">
                                      <a href="../images/kui/hi-fi-1.jpg" class="highslide" onclick="return hs.expand(this)">
                                         <img src="../images/kui/hi-fi-1.jpg" class="col-xs-12" alt="Code cell before redesign">
@@ -270,7 +281,7 @@
                             </div> 
                             <div class="col-xs-12">
                                 <p class="col-xs-12">
-                                    <h4 class="col-xs-12">blah blah</h4>
+                                    <h4 class="col-xs-12">Command results and row details pane</h4>
                                     <p class="col-xs-12">
                                      <a href="../images/kui/hi-fi-2.jpg" class="highslide" onclick="return hs.expand(this)">
                                         <img src="../images/kui/hi-fi-2.jpg" class="col-xs-12" alt="Code cell before redesign">
@@ -281,12 +292,9 @@
                         </section> 
                         <section class="col-xs-12 col-md-8 col-md-offset-2 modal-subsection animated-appearance">
                             <span class="col-xs-12 section-title">Outcome</span><hr />
-                                <ul>
-                                    <li>Successfully integrated KUI into MCM</li>
-                                    <li>Improved KUI’s design and feature set</li>
-                                    <li>Observe how customers are using KUI</li>
-                                    <li>Learn and improve our design</li>
-                                </ul>
+                                <p class="col-xs-12">
+                                    Our final design was delievered and presented to the team. It was well received and successfull implemented into MCM. As next steps, the team will observe how users are utilizing KUI and will strive to learn and improve the design. I believe that KUI can be further expanded to cover more use cases and provide more value to customers.
+                                </p>
                             </div>              
                         </section>                                                                                    
                     </div>
